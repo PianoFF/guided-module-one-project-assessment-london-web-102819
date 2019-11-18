@@ -1,4 +1,4 @@
-class Collaborator<ActiveRecord::Base
+class Collaborator<Artist
     has_many :appointments
     has_many :pianists, through: :appointments
 
