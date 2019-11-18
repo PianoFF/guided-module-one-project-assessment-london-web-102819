@@ -1,0 +1,3 @@
+class CollabVocal < Collaborator
+
+end 

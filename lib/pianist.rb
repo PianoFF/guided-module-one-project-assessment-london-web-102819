@@ -1,4 +1,6 @@
+
 class Pianist<Artist 
+
     has_many :appointments
     has_many :collaborators, through: :appointments
     # def self.create_new_pianist(new_pianist_info)

@@ -1,4 +1,6 @@
+
 class Collaborator<Artist
+
     has_many :appointments
     has_many :pianists, through: :appointments
 
@@ -39,15 +41,6 @@ class Collaborator<Artist
 
     def self.instrumentalists_repertoire
         self.instrumentalists.select{|instrumentalist| instrumentalist.instrumental_repertoire!=nil}
-        # instrumentalists_rep = [
-        #     [["Name"], ["Instrumental Repertoire"]]
-        # ]
-        # # binding.pry
-        # instrumentalists.map {|instrumentalist|
-        #     [instrumentalists_repertoire <<
-        #         [["#{instrumentalist.name}"], ["#{instrumentalist.instrumental_repertoire}"]]
-        #     ] 
-        # }
     end
     
     def self.in_house_collaborators_with_repertoire
